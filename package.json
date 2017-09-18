@@ -11,8 +11,12 @@
     "typescript"
   ],
   "scripts": {
+    "docker-build": "docker build  -t confmr.azurecr.io/apiconference2017:latest .",
+    "docker-run": "docker run confmr.azurecr.io/apiconference2017:latest",
+    "docker-push": "docker push confmr.azurecr.io/apiconference2017",
     "build": "rimraf build && tsc",
-    "start": "nodemon --exec ts-node src/index.ts"
+    "start": "nodemon --exec ts-node src/index.ts",
+    "start-server": "node build/index.js"
   },
   "author": "Manuel Rauber <manuel.rauber@thinktecture.com>",
   "license": "ISC",
