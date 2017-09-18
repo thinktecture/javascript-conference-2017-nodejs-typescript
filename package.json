@@ -1,0 +1,29 @@
+{
+  "name": "api-conference-2017-nodejs-typescript-webapi",
+  "version": "1.0.0",
+  "description": "Sample for the talk 'Web-APIs mit Node.js und TypeScript - leichtgewichtig und performant' at the API Conference 2017, Berlin",
+  "keywords": [
+    "typeorm",
+    "webapi",
+    "api",
+    "web",
+    "web api",
+    "typescript"
+  ],
+  "scripts": {
+    "build": "rimraf build && tsc",
+    "start": "nodemon --exec ts-node src/index.ts"
+  },
+  "author": "Manuel Rauber <manuel.rauber@thinktecture.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@types/restify": "^5.0.3",
+    "nodemon": "^1.12.1",
+    "pg": "^7.3.0",
+    "reflect-metadata": "^0.1.10",
+    "restify": "^6.0.0",
+    "ts-node": "^3.3.0",
+    "typeorm": "0.1.0-alpha.42",
+    "typescript": "^2.5.2"
+  }
+}
