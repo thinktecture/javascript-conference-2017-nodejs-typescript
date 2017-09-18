@@ -23,7 +23,15 @@ export class ApiServer implements HttpServer {
     }
 
     private addRoute(method: 'get' | 'post' | 'put' | 'del', url: string, requestHandler: RequestHandler): void {
-        this.restify[method](url, requestHandler);
+        this.restify[method](url, async (req, res, next) => {
+            try {
+                await requestHandler(req, res, next);
+            }
+            catch (e) {
+                console.log(e);
+                res.send(500, e);
+            }
+        });
         console.log(`Added route ${method.toUpperCase()} ${url}`);
     }
 
