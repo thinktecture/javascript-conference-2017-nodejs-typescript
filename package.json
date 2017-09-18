@@ -11,7 +11,7 @@
     "typescript"
   ],
   "scripts": {
-    "docker-build": "docker build  -t confmr.azurecr.io/apiconference2017:latest .",
+    "docker-build": "docker build -t confmr.azurecr.io/apiconference2017:latest .",
     "docker-run": "docker run confmr.azurecr.io/apiconference2017:latest",
     "docker-push": "docker push confmr.azurecr.io/apiconference2017",
     "build": "rimraf build && tsc",
