@@ -13,6 +13,7 @@
   "author": "Manuel Rauber <manuel.rauber@thinktecture.com>",
   "license": "ISC",
   "dependencies": {
-    "reflect-metadata": "^0.1.10"
+    "reflect-metadata": "^0.1.10",
+    "rimraf": "^2.4.5"
   }
 }
