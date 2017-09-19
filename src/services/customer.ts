@@ -23,7 +23,6 @@ export class CustomerService {
     }
 
     public async update(customer: Customer): Promise<Customer> {
-        console.log(customer);
         const connection = await DatabaseProvider.getConnection();
         const repository = connection.getRepository(Customer);
         const entity = await repository.findOneById(customer.id);
