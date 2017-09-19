@@ -1,5 +1,5 @@
-import {Customer} from '../models/customer';
 import {DatabaseProvider} from '../database/index';
+import {Customer} from '../models/customer';
 
 export class CustomerService {
     public async getById(id: number): Promise<Customer> {
@@ -34,7 +34,7 @@ export class CustomerService {
 
     public async delete(id: number): Promise<void> {
         const connection = await DatabaseProvider.getConnection();
-        return await connection.getRepository(Customer).removeById(id)
+        return await connection.getRepository(Customer).removeById(id);
     }
 }
 

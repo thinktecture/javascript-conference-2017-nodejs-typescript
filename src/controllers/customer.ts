@@ -1,7 +1,7 @@
-import {Controller} from './controller';
-import {HttpServer} from '../server/httpServer';
 import {Request, Response} from 'restify';
+import {HttpServer} from '../server/httpServer';
 import {customerService} from '../services/customer';
+import {Controller} from './controller';
 
 export class CustomerController implements Controller {
     public initialize(httpServer: HttpServer): void {
@@ -26,16 +26,10 @@ export class CustomerController implements Controller {
     }
 
     private async update(req: Request, res: Response): Promise<void> {
-        res.send(await customerService.update({...req.body, id: req.params.id}));
+        res.send(await customerService.update({ ...req.body, id: req.params.id }));
     }
 
     private async remove(req: Request, res: Response): Promise<void> {
-        try {
-            await customerService.delete(req.params.id);
-            res.send(200);
-        }
-        catch (e) {
-            res.send(500);
-        }
+        await customerService.delete(req.params.id);
     }
 }

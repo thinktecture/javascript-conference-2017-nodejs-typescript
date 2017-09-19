@@ -38,7 +38,7 @@ export class DatabaseProvider {
                 Customer
             ],
             autoSchemaSync: true
-        }); 
+        });
 
         return DatabaseProvider.connection;
     }
