@@ -1,9 +1,8 @@
 import {Connection, createConnection} from 'typeorm';
-import {Bill} from '../models/bill';
 import {Customer} from '../models/customer';
 
 export interface DatabaseConfiguration {
-    type: 'postgres' | 'mysql' | 'mssql';
+    type: 'postgres';
     host: string;
     port: number;
     username: string;
@@ -36,11 +35,10 @@ export class DatabaseProvider {
                 ssl
             },
             entities: [
-                Customer,
-                Bill
+                Customer
             ],
             autoSchemaSync: true
-        } as any); // as any to prevent complaining about the object does not fit to MongoConfiguration, which we won't use here
+        }); 
 
         return DatabaseProvider.connection;
     }
