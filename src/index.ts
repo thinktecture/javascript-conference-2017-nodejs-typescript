@@ -9,7 +9,7 @@ DatabaseProvider.configure({
     password: process.env.DATABASE_PASSWORD || 'apiconference2017',
     host: process.env.DATABASE_HOST || 'localhost',
     port: +process.env.DATABASE_PORT || 5432,
-    ssl: true
+    ssl: !!process.env.USE_SSL
 });
 
 const server = new ApiServer();
