@@ -1,7 +1,7 @@
 {
-  "name": "api-conference-2017-nodejs-typescript-webapi",
+  "name": "basta-herbst-2017-nodejs-typescript",
   "version": "1.0.0",
-  "description": "Sample for the talk 'Web-APIs mit Node.js und TypeScript - leichtgewichtig und performant' at the API Conference 2017, Berlin",
+  "description": "code sample for the talk \"Web-APIs mit Node.js und TypeScript – für .NET-Entwickler\" at BASTA! conference 2017 in Mainz.",
   "keywords": [
     "typeorm",
     "webapi",
@@ -11,9 +11,9 @@
     "typescript"
   ],
   "scripts": {
-    "docker-build": "docker build -t confmr.azurecr.io/apiconference2017:latest .",
-    "docker-run": "docker run confmr.azurecr.io/apiconference2017:latest",
-    "docker-push": "docker push confmr.azurecr.io/apiconference2017",
+    "docker-build": "docker build -t confmr.azurecr.io/bastaherbst2017nodejswebapi:latest .",
+    "docker-run": "docker run confmr.azurecr.io/bastaherbst2017nodejswebapi:latest",
+    "docker-push": "docker push confmr.azurecr.io/bastaherbst2017nodejswebapi",
     "build": "rimraf build && tsc",
     "start": "nodemon --exec ts-node src/index.ts",
     "start-server": "node build/index.js"
