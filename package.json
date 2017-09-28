@@ -11,9 +11,8 @@
     "typescript"
   ],
   "scripts": {
-    "docker-build": "docker build -t confmr.azurecr.io/bastaherbst2017nodejswebapi:latest .",
-    "docker-run": "docker run confmr.azurecr.io/bastaherbst2017nodejswebapi:latest",
-    "docker-push": "docker push confmr.azurecr.io/bastaherbst2017nodejswebapi",
+    "docker-build": "docker build -t confmr.azurecr.io/basta-herbst-2017-nodejs-webapi:latest .",
+    "docker-push": "docker push confmr.azurecr.io/basta-herbst-2017-nodejs-webapi",
     "build": "rimraf build && tsc",
     "start": "nodemon --exec ts-node src/index.ts",
     "start-server": "node build/index.js"
