@@ -1,7 +1,7 @@
-# basta-herbst-2017-nodejs-typescript
+# javascript-conference-2017-nodejs-typescript
 
-This repository contains the sample for the talk "Web-APIs mit Node.js und TypeScript - für .NET-Entwickler" at the BASTA! conference 2017 in Mainz.
-Slides can be found on [Speakerdeck](https://speakerdeck.com/manuelrauber/web-apis-mit-node-dot-js-und-typescript-fur-net-entwickler-1)
+This repository contains the sample for the talk "Modern Web APIs with Node.js & TypeScript" at the International JavaScript Conference 2017 in Munich.
+Slides can be found on [Speakerdeck](https://speakerdeck.com/manuelrauber/modern-web-apis-with-node-dot-js-and-typescript-1)
 
 ## Setup
 
